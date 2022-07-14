@@ -1,0 +1,111 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+    margin: 0;
+  }
+  .col-1 {
+    background: #D7E8D4;
+    flex: 1;
+  }
+  .col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  .content > article {
+    flex: 4;
+    min-height: 60vh;
+  }
+  header, footer {
+    background: yellowgreen;
+    height: 20vh;
+  }
+  header, footer, article, nav {
+    padding: .5em;
+  }
+  p.copyright {
+        position: absolute;
+        width: 100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 1.2em;
+        text-align: center;
+        bottom:0;
+    }
+</style>
+<body>
+  <<nav class="col-1">
+    <a src="/" id="logo"><h3> Site Navigation</h3></a> 
+    <nav>  
+    <a href="/"><h3>Home</h3></a> 
+    <a href="/about"><h3>About</h3></a> 
+    <a href="/contact"><h3>Contact</h3></a><br>
+    <h3>Any suggestion..!</h3>
+
+<form action="" id="usrform">
+  Name: <input type="text" name="usrname">
+  <input  type="submit">
+</form>
+<textarea rows="17" cols="25" name="comment" form="usrform">
+    Enter text here...
+</textarea>
+</nav></nav>
+
+
+  <div class="col-2">
+  	
+<header>  
+  
+   <h2>GeeksforGeeks</h2>
+   <p style="text-align:justify;font-size: 17px;">
+               A Computer Science portal for geeks.
+               It contains well written, well thought 
+               and well explained computer science and
+               programming articles.
+    </p>
+</header>
+
+    <main class="content">
+
+    <article> 
+            <h3>GeeksforGeeks Learning</h3>
+            <p style="text-align:justify;font-size: 20px;">
+                Posted by GFG
+            </p>
+  
+            <p style="text-align:justify;font-size: 17px;">
+               A Computer Science portal for geeks.
+               It contains well written, well thought 
+               and well explained computer science and
+               programming articles.
+            </p>
+            <p style="text-align:justify;font-size: 17px;">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis vero repudiandae maiores, velit tenetur nemo magni neque expedita, id in sit accusantium, eveniet perferendis officiis porro maxime sapiente et molestias. 
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores eos maxime enim odio at perferendis harum itaque est! Eaque aut nostrum quaerat placeat accusantium inventore nam tempora tempore, dicta incidunt.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi pariatur asperiores velit quod blanditiis, eaque dicta repudiandae esse aperiam ab fugit possimus magni expedita nostrum hic laborum qui dolores? Earum.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate sint beatae ipsa laboriosam labore tempore ex, ad omnis odio distinctio doloremque quod deserunt maiores molestiae, quas id, odit eum fuga?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse pariatur temporibus quidem in ex, rerum odit, maiores, tenetur omnis quis rem voluptatibus animi quaerat fugit est expedita maxime porro! Et.
+            </p>     
+</article>
+
+    </main>
+
+    <footer class="footer">
+       <h3>Thankyou visit again...!!!</h3>
+            <p class="copyright">© GROUP TITLE 2015</p>
+        
+    </footer>
+
+  </div>
+</body>
